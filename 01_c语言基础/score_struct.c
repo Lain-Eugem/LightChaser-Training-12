@@ -15,7 +15,7 @@ int main(){
     }
 
     Student *student = malloc(N * sizeof(*student));
-    if (student == NULL){
+    if (student == NULL){                               //防御性编程，防止内存不足
         printf("内存不足，申请失败。");
         return 1;
     }

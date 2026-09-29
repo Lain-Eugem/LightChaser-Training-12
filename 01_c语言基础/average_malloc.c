@@ -8,13 +8,13 @@ int main(){
     printf("请输入需要处理的数据个数（整数）：\n");
     scanf("%d",&N);
 
-    if (N <= 0){
+    if (N <= 0){                            //保证输入合法
         printf("无效的数字，请重试。\n");
         return 1;
     }
 
-    int *arr = malloc(N * sizeof(*arr));    //sizeof(指针名)可以让编译器自己推断，这样更安全方便。
-    if (arr == NULL) {
+    int* arr = malloc(N * sizeof(*arr));    //sizeof(指针名)可以让编译器自己推断，这样更安全方便。
+    if (arr == NULL) {                      //防御性编程
         printf("请求失败，请重试。\n");
         return 1;
     }

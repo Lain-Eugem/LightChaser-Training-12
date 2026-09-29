@@ -5,10 +5,12 @@ int main(){
     int i = 100;
 
     while (i) {
-        if (i % 2 != 0){
+        if (i % 2 != 0) {
             sum = sum + i;
     }
+
     i--;
+
     }
 
     printf("100以内奇数加和为%d\n",sum);
