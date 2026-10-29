@@ -4,7 +4,7 @@
 typedef struct Student {
     char name[20];
     int score;
-} Student;
+} Student;                                              //以后使用Student结构体就可以不用加上struct了wow
 
 int main(){
     int N;
@@ -14,7 +14,7 @@ int main(){
     return 1;
     }
 
-    Student *student = malloc(N * sizeof(*student));
+    Student *student = malloc(N * sizeof(*student));    //student数组
     if (student == NULL){                               //防御性编程，防止内存不足
         printf("内存不足，申请失败。");
         return 1;
