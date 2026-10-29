@@ -19,12 +19,12 @@ int main(){
         return 1;
     }
 
-    for (int i ; i < N ; i++){
+    for (int i = 0; i < N ; i++){
         printf("请输入第%d位数字（整数）：\n",i + 1);
         scanf("%d",&arr[i]);
     }
     
-    for (int i ; i < N ; i++) {
+    for (int i = 0; i < N ; i++) {
         sum = sum + arr[i];
     }
     
